@@ -72,6 +72,8 @@ body {
 .auth-card p.containerRecupSenha {
   max-width: 20rem;
   margin: auto;
+  line-height: normal;
+  margin-bottom: 1rem;
 }
 .auth-card .form-group {
   text-align: left;
