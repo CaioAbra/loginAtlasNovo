@@ -47,6 +47,10 @@ body {
     overflow: hidden; // Para garantir que o ::before não ultrapasse os limites do card
     max-width: 708px;
 
+    @media screen and (min-width:1024px) {
+        max-width: 608px;
+    }
+
 
     &::before {
         content: "";
