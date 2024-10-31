@@ -45,6 +45,7 @@ body {
     text-align: center;
     border: 1px solid #666666;
     overflow: hidden; // Para garantir que o ::before não ultrapasse os limites do card
+    max-width: 708px;
 
     &::before {
         content: "";

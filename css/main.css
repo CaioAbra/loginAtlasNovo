@@ -23,6 +23,7 @@ body {
   text-align: center;
   border: 1px solid #666666;
   overflow: hidden;
+  max-width: 708px;
 }
 .auth-card::before {
   content: "";
