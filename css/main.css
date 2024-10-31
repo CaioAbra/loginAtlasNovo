@@ -21,13 +21,14 @@ body {
   width: 100%;
   max-width: 400px;
   text-align: center;
+  border: 1px solid #666666;
 }
 .auth-card .logo {
   width: 50px;
   margin-bottom: 8px;
 }
 .auth-card h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #ffffff;
   font-size: 1.5rem;
   margin-bottom: 16px;
@@ -39,13 +40,19 @@ body {
   font-weight: 300;
 }
 .auth-card .form-control {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #B9B9B9;
+  color: #141414;
   border: none;
   font-size: 16px;
   border-radius: 8px;
   padding: 8px;
   margin-bottom: 12px;
+}
+.auth-card .form-control:focus {
+  background-color: #F4F4F4;
+  color: #141414;
+  border: solid 2px #DE8734;
+  box-shadow: none !important;
 }
 .auth-card .form-check-label {
   color: #B9B9B9;

@@ -11,7 +11,7 @@ $btn-primary-bg: #DE8734; // Cor base para o botão
 $btn-primary-hover-bg: darken($primary-color, 10%); // Efeito de hover
 
 // Fontes e Tamanhos
-$font-family-primary: "Poppins", sans-serif;
+$font-family-primary: "Space Grotesk", sans-serif;
 $font-size-base: 16px;
 $font-size-small: 0.875rem;
 $font-size-large: 1.5rem;
@@ -21,7 +21,7 @@ $spacing-unit: 8px;
 
 // _auth.scss
 
-body{
+body {
     background: $background-color;
     height: 100%;
     min-height: 100vh;
@@ -44,6 +44,7 @@ body{
     width: 100%;
     max-width: 400px;
     text-align: center;
+    border: 1px solid #666666;
     // background: rgba(20, 20, 20, 0.8);
 
     // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -74,13 +75,21 @@ body{
     }
 
     .form-control {
-        background-color: $secondary-color;
-        color: $text-color;
+        background-color: #B9B9B9;
+        color: #141414;
         border: none;
         font-size: $font-size-base;
         border-radius: $spacing-unit;
         padding: $spacing-unit;
         margin-bottom: $spacing-unit * 1.5;
+
+        &:focus {
+            background-color: #F4F4F4;
+            color: #141414;
+            border: solid 2px #DE8734;
+            box-shadow: none !important;
+
+        }
     }
 
     .form-check-label {
