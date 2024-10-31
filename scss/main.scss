@@ -2,9 +2,9 @@
 $primary-color: #DE8734; // Cor do botão e links
 $secondary-color: #333333; // Fundo dos inputs
 $text-color: #ffffff; // Cor do texto principal
-$background-color: rgba(20, 20, 20, 0.7); // Fundo do card de autenticação
+$background-color: rgba(20, 20, 20, 0.8); // Fundo do card de autenticação
 $muted-text-color: #B9B9B9; // Texto mais claro
-$btn-text-color: rgba(20, 20, 20, 0.7); // Texto mais claro
+$btn-text-color: rgba(20, 20, 20, 0.8); // Texto mais claro
 
 // Button Colors (Gradiente e hover)
 $btn-primary-bg: #DE8734; // Cor base para o botão
@@ -32,12 +32,20 @@ $spacing-unit: 8px;
 
 .auth-card {
     background-color: $background-color;
-    border-radius: $spacing-unit;
+    border-radius: $spacing-unit + 4;
     padding: $spacing-unit * 2;
     width: 100%;
     max-width: 400px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    // background: rgba(20, 20, 20, 0.8);
+
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    // backdrop-filter: blur(20px);
+    // border: 1px solid;
+    // border-image-source: linear-gradient(180deg, #242424 0%, #666666 100%);
+
+
 
     .logo {
         width: 50px;
@@ -108,7 +116,7 @@ $spacing-unit: 8px;
     a {
         color: $primary-color !important;
         font-size: $font-size-small;
-        
+
 
         &.recup {
             color: $muted-text-color !important;
