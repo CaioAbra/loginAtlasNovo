@@ -120,6 +120,11 @@ $spacing-unit: 8px;
 
         &.recup {
             color: $muted-text-color !important;
+
+            display: flex;
+            align-self: center;
+            align-content: center;
+            align-items: center;
         }
 
         &:hover {
