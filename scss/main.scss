@@ -92,6 +92,11 @@ body {
         font-size: $font-size-small;
         margin-bottom: $spacing-unit * 2;
         font-weight: 300;
+
+        &.containerRecupSenha {
+            max-width: 20rem;
+            margin: auto;
+        }
     }
 
     .form-group {
