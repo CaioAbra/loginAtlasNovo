@@ -1,0 +1,86 @@
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./../assets/images/background.png") no-repeat center center;
+  background-size: cover;
+}
+
+.auth-card {
+  background-color: rgba(20, 20, 20, 0.7);
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.auth-card .logo {
+  width: 50px;
+  margin-bottom: 8px;
+}
+.auth-card h2 {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.auth-card p {
+  color: #B9B9B9;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+.auth-card .form-control {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+.auth-card .form-check-label {
+  color: #B9B9B9;
+  font-size: 0.875rem;
+}
+.auth-card .btn-primary {
+  background-color: #DE8734;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  color: rgba(20, 20, 20, 0.7);
+  transition: background-color 0.3s ease;
+}
+.auth-card .btn-primary:hover {
+  background-color: #c06e1f;
+}
+.auth-card .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #B9B9B9;
+}
+.auth-card .options a {
+  color: #DE8734;
+}
+.auth-card .options a:hover {
+  text-decoration: underline;
+}
+.auth-card a {
+  color: #DE8734 !important;
+  font-size: 0.875rem;
+}
+.auth-card a.recup {
+  color: #B9B9B9 !important;
+}
+.auth-card a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

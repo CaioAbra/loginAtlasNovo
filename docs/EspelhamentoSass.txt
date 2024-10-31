@@ -1,0 +1,1 @@
+sass --watch D:\Developer\wamp64\www\loginAtlasNovo\scss\main.scss:D:\Developer\wamp64\www\loginAtlasNovo\css\main.css
