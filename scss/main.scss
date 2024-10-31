@@ -22,7 +22,10 @@ $spacing-unit: 8px;
 // _auth.scss
 
 body {
+    font-family: $font-family-primary; // Define a fonte primária globalmente
+    font-size: $font-size-base;
     background: $background-color;
+    color: $text-color;
     height: 100%;
     min-height: 100vh;
     width: 100%;
@@ -52,7 +55,6 @@ body {
         padding: 50px 70px !important;
     }
 
-
     &::before {
         content: "";
         position: absolute;
@@ -63,29 +65,14 @@ body {
         border-radius: inherit; // Herda o border-radius do .auth-card
         padding: 1px; // Adiciona uma espessura para simular a borda
         background: linear-gradient(180deg, #242424 0%, #666666 100%);
-        mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0); // Gradiente para a borda
-        -webkit-mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0); // Máscara para criar o efeito de borda
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: destination-out;
         mask-composite: exclude;
         z-index: -1; // Mantém a borda atrás do conteúdo do card
-        // }
-
-        // &::before {
-        // content: "";
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // bottom: 0;
         background-color: $background-color; // Fundo semi-transparente para complementar o blur
         backdrop-filter: blur(20px); // Aplicando o efeito de blur
-        z-index: -1; // Coloca o ::before atrás do conteúdo do card
     }
-
 
     .logo {
         width: 50px;
@@ -100,6 +87,7 @@ body {
     }
 
     p {
+        font-family: $font-family-primary;
         color: $muted-text-color;
         font-size: $font-size-small;
         margin-bottom: $spacing-unit * 2;
@@ -111,6 +99,7 @@ body {
 
         label {
             display: block;
+            font-family: $font-family-primary;
             font-size: $font-size-small;
             color: $muted-text-color;
             font-weight: 400;
@@ -119,6 +108,7 @@ body {
         }
 
         .form-control {
+            font-family: $font-family-primary;
             background-color: #B9B9B9;
             color: #141414;
             border: none;
@@ -137,31 +127,28 @@ body {
     }
 
     .form-check-label {
+        font-family: $font-family-primary;
         color: $muted-text-color;
         font-size: $font-size-small;
     }
 
-    // Estilização do checkbox customizado
     .form-check-input {
-        // width: 1.25em;
-        // height: 1.25em;
         border-radius: 0.25em;
         background-color: $secondary-color;
         border: 1px solid $muted-text-color;
         transition: background-color 0.2s ease, border-color 0.2s ease;
 
         &:checked {
-            background-color: $btn-primary-bg; // Cor laranja quando selecionado
-            border-color: $primary-color; // Borda laranja quando selecionado
+            background-color: $btn-primary-bg;
+            border-color: $primary-color;
         }
 
-        // Estilizando o ícone de "check" (marca de seleção) quando selecionado
         &:checked::before {
-            content: "\2713"; // Símbolo de check
+            content: "\2713";
             display: flex;
             align-items: center;
             justify-content: center;
-            color: $btn-text-color; // Cor do check (ajustável)
+            color: $btn-text-color;
             font-size: 0.75em;
             background-color: $btn-primary-bg;
             width: 13px;
@@ -170,8 +157,8 @@ body {
         }
     }
 
-
     .btn-primary {
+        font-family: $font-family-primary;
         background-color: $btn-primary-bg;
         border: none;
         font-size: $font-size-base;
@@ -191,6 +178,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-family: $font-family-primary;
         font-size: $font-size-small;
         color: $muted-text-color;
 
@@ -204,6 +192,7 @@ body {
     }
 
     a {
+        font-family: $font-family-primary;
         color: $primary-color !important;
         font-size: $font-size-small;
 
@@ -219,8 +208,4 @@ body {
             text-decoration: underline;
         }
     }
-
-
-
-
 }
