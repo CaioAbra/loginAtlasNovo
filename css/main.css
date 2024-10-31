@@ -15,12 +15,24 @@ body {
 }
 
 .auth-card {
+  position: relative;
   background-color: rgba(20, 20, 20, 0.6);
   border-radius: 12px;
   padding: 16px;
-  width: 100%;
   text-align: center;
   border: 1px solid #666666;
+  overflow: hidden;
+}
+.auth-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(20px);
+  z-index: -1;
 }
 .auth-card .logo {
   width: 50px;

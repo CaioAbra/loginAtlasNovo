@@ -38,13 +38,26 @@ body {
 }
 
 .auth-card {
+    position: relative; // Necessário para o posicionamento do ::before
     background-color: $background-color;
     border-radius: $spacing-unit + 4;
     padding: $spacing-unit * 2;
-    width: 100%;
-    // max-width: 708px;
     text-align: center;
     border: 1px solid #666666;
+    overflow: hidden; // Para garantir que o ::before não ultrapasse os limites do card
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $background-color; // Fundo semi-transparente para complementar o blur
+        backdrop-filter: blur(20px); // Aplicando o efeito de blur
+        z-index: -1; // Coloca o ::before atrás do conteúdo do card
+    }
+
 
     .logo {
         width: 50px;
