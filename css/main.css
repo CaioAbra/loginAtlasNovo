@@ -28,6 +28,7 @@ body {
 @media screen and (min-width: 1024px) {
   .auth-card {
     max-width: 608px;
+    padding: 50px 70px !important;
   }
 }
 .auth-card::before {
