@@ -13,7 +13,7 @@ $btn-primary-hover-bg: darken($primary-color, 10%); // Efeito de hover
 // Fontes e Tamanhos
 $font-family-primary: "Space Grotesk", sans-serif;
 $font-size-base: 16px;
-$font-size-small: 0.875rem;
+$font-size-small: 0.9rem;
 $font-size-large: 1.5rem;
 
 // Spacing
@@ -113,6 +113,36 @@ body {
         font-size: $font-size-small;
     }
 
+    // Estilização do checkbox customizado
+    .form-check-input {
+        // width: 1.25em;
+        // height: 1.25em;
+        border-radius: 0.25em;
+        background-color: $secondary-color;
+        border: 1px solid $muted-text-color;
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+
+        &:checked {
+            background-color: $btn-primary-bg; // Cor laranja quando selecionado
+            border-color: $primary-color; // Borda laranja quando selecionado
+        }
+
+        // Estilizando o ícone de "check" (marca de seleção) quando selecionado
+        &:checked::before {
+            content: "\2713"; // Símbolo de check
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $btn-text-color; // Cor do check (ajustável)
+            font-size: 0.75em;
+            background-color: $btn-primary-bg;
+            width: 13px;
+            height: 13px;
+            border-radius: 3px;
+        }
+    }
+
+
     .btn-primary {
         background-color: $btn-primary-bg;
         border: none;
@@ -161,4 +191,8 @@ body {
             text-decoration: underline;
         }
     }
+
+
+
+
 }
