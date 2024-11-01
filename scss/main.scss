@@ -24,7 +24,7 @@ $spacing-unit: 8px;
 body {
     font-family: $font-family-primary; // Define a fonte primária globalmente
     font-size: $font-size-base;
-    background: $background-color;
+    background-color: #0000;
     color: $text-color;
     height: 100%;
     min-height: 100vh;
@@ -32,12 +32,20 @@ body {
 }
 
 .auth-container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('./../assets/images/background.webp') no-repeat center center;
+    background: url('./../assets/images/background-Mob.webp') no-repeat center center;
     background-size: cover;
+
+    @media screen and (min-width:768px) {
+        background: url('./../assets/images/background-Desktop.webp') center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
 }
 
 .auth-card {
